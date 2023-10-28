@@ -9,64 +9,81 @@
   <body>
     <div id="connect" class="MainDiv">
       <div class="bg"></div>
-      <div id="meniuMax">
-        <p id="titluFormular">Welcome to <span id="logo">Park&You</span>!</p>
-        <div class="meniuMin">
-          <div id="meniuSignIn">
-            <p class="titluOptiune">SIGN IN</p>
-            <form id="SignInSection">
-              <div class="camp" id="SiDivEmail">
-                <label for="SiEmail" class="inputText">Email</label>
-                <input type="email" id="SiEmailInput" name="SiEmail" />
-              </div>
-              <div class="camp" id="SiDivPassword">
-                <label for="SiPassword" class="inputText">Password</label>
-                <input type="password" id="SiPasswordInput" name="SiPassword" />
-                <a
-                  href="https://youtu.be/GBIIQ0kP15E?si=rqJ4Crvr2icsbrZF"
-                  id="SiNoPass"
-                  target="_blank"
-                  >Forgot your password?</a
-                >
-              </div>
-              <input type="submit" id="SiSubmit" value="SIGN IN" />
-            </form>
-          </div>
-
-          <hr style="color: #1a936f" />
-
-          <div id="meniuRegister">
-            <p class="titluOptiune">REGISTER</p>
-            <form id="RegisterSection">
-              <div class="camp" id="RDivName">
-                <label for="RName" class="inputText">Name</label>
-                <input type="text" id="RNameInput" name="RName" />
-              </div>
-              <div class="camp" id="RDivSurname">
-                <label for="RSurname" class="RSurname">Surname</label>
-                <input type="text" id="RSurnameInput" name="RSurname" />
-              </div>
-              <div class="camp" id="RDivEmail">
-                <label for="REmail" class="inputText">Email</label>
-                <input type="email" id="REmailInput" name="REmail" />
-              </div>
-              <div class="camp" id="RDivPassword">
-                <label for="RPassword" class="inputText">Password</label>
-                <input type="password" id="RPasswordInput" name="RPassword" />
-              </div>
-              <div id="RRadioGroup">
-                <p>Please select user type</p>
-                <div class="RRadioBtn">
-                  <input type="radio" id="user" name="typeUser" value="USER" />
-                  <label for="userRadio">User</label>
+      <div class="all-w-btn">
+        <a class="back-btn" href="index.html">&#60 Back</a>
+        <div id="meniuMax">
+          <p id="titluFormular">Welcome to <span id="logo">Park&You</span>!</p>
+          <div class="meniuMin">
+            <div id="meniuSignIn">
+              <p class="titluOptiune">SIGN IN</p>
+              <form id="SignInSection">
+                <div class="camp" id="SiDivEmail">
+                  <label for="SiEmail" class="inputText">Email</label>
+                  <input type="email" id="SiEmailInput" name="SiEmail" />
                 </div>
-                <div class="RRadioBtn">
-                  <input type="radio" id="park" name="typeUser" value="PARK" />
-                  <label for="parkRadio">Park</label>
+                <div class="camp" id="SiDivPassword">
+                  <label for="SiPassword" class="inputText">Password</label>
+                  <input
+                    type="password"
+                    id="SiPasswordInput"
+                    name="SiPassword"
+                  />
+                  <a
+                    href="https://youtu.be/GBIIQ0kP15E?si=rqJ4Crvr2icsbrZF"
+                    id="SiNoPass"
+                    target="_blank"
+                    >Forgot your password?</a
+                  >
                 </div>
-                <input type="submit" id="RSubmit" value="Register" />
-              </div>
-            </form>
+                <input type="submit" id="SiSubmit" value="SIGN IN" />
+              </form>
+            </div>
+
+            <hr style="color: #1a936f" />
+
+            <div id="meniuRegister">
+              <p class="titluOptiune">REGISTER</p>
+              <form id="RegisterSection">
+                <div class="camp" id="RDivName">
+                  <label for="RName" class="inputText">Name</label>
+                  <input type="text" id="RNameInput" name="RName" />
+                </div>
+                <div class="camp" id="RDivSurname">
+                  <label for="RSurname" class="RSurname">Surname</label>
+                  <input type="text" id="RSurnameInput" name="RSurname" />
+                </div>
+                <div class="camp" id="RDivEmail">
+                  <label for="REmail" class="inputText">Email</label>
+                  <input type="email" id="REmailInput" name="REmail" />
+                </div>
+                <div class="camp" id="RDivPassword">
+                  <label for="RPassword" class="inputText">Password</label>
+                  <input type="password" id="RPasswordInput" name="RPassword" />
+                </div>
+                <div id="RRadioGroup">
+                  <p>Please select user type</p>
+                  <div class="RRadioBtn">
+                    <input
+                      type="radio"
+                      id="user"
+                      name="typeUser"
+                      value="USER"
+                    />
+                    <label for="userRadio">User</label>
+                  </div>
+                  <div class="RRadioBtn">
+                    <input
+                      type="radio"
+                      id="park"
+                      name="typeUser"
+                      value="PARK"
+                    />
+                    <label for="parkRadio">Park</label>
+                  </div>
+                  <input type="submit" id="RSubmit" value="Register" />
+                </div>
+              </form>
+            </div>
           </div>
         </div>
       </div>

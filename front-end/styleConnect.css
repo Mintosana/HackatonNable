@@ -70,6 +70,28 @@ body {
   padding: 2rem;
 }
 
+.all-w-btn {
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  width: 100vw;
+}
+
+.back-btn {
+  text-decoration: none;
+  width: max-content;
+  color: white;
+  padding: 0.75rem 1rem;
+  border-radius: 30px;
+  color: var(--clr-light-green);
+  transition: color 0.2s ease-in-out;
+  font-size: 1.2rem;
+}
+
+.back-btn:hover {
+  color: var(--clr-dark-green);
+}
+
 #meniuSignIn,
 #meniuRegister {
   display: flex;
@@ -78,8 +100,9 @@ body {
 }
 
 #meniuMax {
+  position: relative;
   display: flex;
-  width: 70%;
+  width: 100%;
   flex-direction: column;
   align-items: center;
   gap: 4rem;
