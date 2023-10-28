@@ -1,7 +1,7 @@
 const {Sequelize, DataTypes} = require('sequelize');
 const sequelize = new Sequelize('sqlite::memory:');
 
-const Parc = sequelize.define('Parc',{
+const Park = sequelize.define('Park',{
   parkName:{
     type:DataTypes.STRING,
     allowNull: false
@@ -19,4 +19,4 @@ const Parc = sequelize.define('Parc',{
   },
 })
 
-module.exports = Parc;
+module.exports = Park;
