@@ -1,25 +1,28 @@
-const express = require("express")
-const app = express()
-const port = 3000
+const express = require("express");
+const app = express();
+const port = 3000;
 
-const db = require("./models/Index")
+const db = require("./models/Index").db;
 
-app.get("/", (req, res) => {
-    res.send("Hello World!")
-})
+app.get("/", (req, res) =>
+{
+    res.send("Hello there!");
+});
 
-app.listen(port, () => {
-    console.log(`Example app listening on port ${port}`)
-})
+app.listen(port, () =>
+{
+    console.log(`App listening on port ${port}`);
+});
 
-app.get("/reset", (req, res) => {
-    res.send("Salutare!")
-    try {
-        db.sync({ force: true })
-        res.status(200)
-        res.send("Database has been reset!")
-    } catch {
-        res.status(500)
-        res.send("Server Error! Couldn't reset database...")
-    }
-})
+app.get("/reset", (req, res) =>
+{
+    db
+        .sync({ force: true })
+        .then(() =>
+            res.status(200).send({ message: "Database was reset!" }))
+        .catch((err) =>
+        {
+            console.log(err);
+            res.status(500).send({ message: "Error when trying to reset database!" })
+        });
+});

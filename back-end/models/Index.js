@@ -1,13 +1,13 @@
 const db = require("../config/db")
-const {Sequelize} = require("sequelize")
+const { Sequelize } = require("sequelize")
 
 const ParkModel = require("./Park")
 const ReviewModel = require("./Review")
 const UserModel = require("./User")
 
-const user = new UserModel(db, Sequelize)
-const park = new ParkModel(db, Sequelize)
-const review = new ReviewModel(db, Sequelize)
+const user = UserModel(db, Sequelize)
+const park = ParkModel(db, Sequelize)
+const review = ReviewModel(db, Sequelize)
 
 module.exports = {
     park,
