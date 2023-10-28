@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Agbalumo&family=Poppins:wght@700&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins"; 
+    color:#093F51;
+}
+body{
+    width: 100%;
+    height: max-content;
+    background-color: white;
+    /* display:inline-block; */
+    /* overflow-x: hidden;
+    overflow-y: hidden; */
+}
+#homePage{
+    text-decoration: none;
+}
+.MenuBar{
+    display:flex;
+    flex-direction:row;
+    padding-top: 1%;
+}
+#logoImg{
+    width:20%;
+    align-self: center;
+}
+#logoTxt{
+    font-family: "Agbalumo";
+    font-size: 4em;
+    align-self: center;
+}
+.userMenu{
+    padding:3% 0% 10% 48%;
+    size: 3em;
+}
+#usrImg{
+    width:10%;
+    align-self: center;
+}
+#numeUtilizator{
+    font-size:2em;
+    align-self: center;
+    padding-bottom:0%;
+}
+.filterOptionsReviews{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+}
+#sort,#filter{
+    display:flex;
+    flex-direction: row;
+    width: 200px;
+    margin-left:10px;
+}
+#imgOptiune{
+    width:50px;
+    height:50px;
+}
+.listaParcuri{
+    padding:2% 0% 10% 5%;
+    list-style-type:none;
+    font-size:1em;
+}
+button {
+	background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	cursor: pointer;
+	outline: inherit;
+    font-size:2em;
+    transition: all 0.3s ease-in-out;
+}
+button:hover{
+    font-size:2.1em;
+}
+#btn{
+    width:30px;
+    height:30px;
+}
+.elementLista{
+    border-color: #093F51;
+    border-style:solid;
+    border-width: 0.2em;
+    border-radius: 1em;
+    padding:2%;
+    font-size: 2em;
+    margin:1%
+}
+#imgStar{
+    width:5%;
+    align-self: center;
+}
+#review{
+    font-size: 0.5em;
+}
+.review{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+}
+
