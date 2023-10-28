@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Agbalumo&family=Poppins:wght@700&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins"; 
+    color:#093F51;
+}
+body{
+    width: 100%;
+    height: max-content;
+    background-color: white;
+    display:inline;
+}
+#titluFormular{
+    font-size: 2em;
+}
+#logo{
+    font-family: "Agbalumo";
+    font-size: 1.2em;
+}
+#imgSide{
+    height: 120vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#meniuMax{
+    padding-left:10%;
+    display:inline-block;
+}
+.meniuMin{
+    padding-top:7.5%;
+}
+#meniuRegister,#meniuSignIn{
+    margin-bottom:1.2em;
+}
+.titluOptiune{
+    font-size:1.2em;
+    margin-bottom:0.2em;
+}
+#SignInSection,#RegisterSection{
+    margin-top:0.5em;
+}
+#SiDivEmail,#SiDivPassword,#RDivName,#RDivSurname,#RDivEmail,#RDivPassword,#RRadioGroup{
+    display:flex;
+    flex-direction: column;
+}
+#SiEmailInput,#SiPasswordInput,#RNameInput,#RSurnameInput,#REmailInput,#RPasswordInput{
+    padding:0.5em;
+    padding-right:5em;
+    border-radius:2em;
+    margin-bottom:1.5em;
+}
+#SiNoPass{
+    color:#093F51;
+    padding-left:14em;
+    margin-bottom:1.5em;
+}
+#SiSubmit,#RSubmit{
+    color:white;
+    background-color:#1A936F;
+    border-color:#1A936F;
+    padding:0.5em 14em;
+    border-radius:2em;
+    transition: all 0.3s ease-in-out;
+}
+#SiSubmit:hover,#RSubmit:hover{
+    background-color: #F3E9D2;
+    border-color:#F3E9D2;
+    color:#191919;
+}
