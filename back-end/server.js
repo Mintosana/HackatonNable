@@ -1,13 +1,23 @@
 const express = require("express");
 const app = express();
+const router = require("./routes/index");
 const port = 3000;
 
 const db = require("./models/Index").db;
+
 
 app.get("/", (req, res) =>
 {
     res.send("Hello there!");
 });
+
+app.use('/api', router);
+
+
+
+
+
+
 
 app.listen(port, () =>
 {
