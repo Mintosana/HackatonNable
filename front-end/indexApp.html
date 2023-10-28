@@ -3,9 +3,72 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Park&You</title>
+    <title>Park&You Control Panel</title>
+    <link rel="stylesheet" href="styleApp.css">
 </head>
 <body>
-    
+    <div class="mainBody">
+        <div class="MenuBar">
+            <div class="logoMenu">
+                <img src="/HackatonNable/front-end/assets/logoPark&You_Rays_NoBG_Dark.png" id="logoImg">
+                <span id="logoTxt">Park&You</span>
+            </div>
+            <div class="userMenu">
+                <img src="/HackatonNable/front-end/assets/user.png" id="usrImg">
+                <span id="numeUtilizator">Rece Cristian</span>
+            </div>
+        </div>
+        
+        <div class="filterOptionsReviews">
+            <div id="sort">
+                <p>Sort</p>
+                <img id="imgOptiune" src="/HackatonNable/front-end/assets/settings-sliders.png">
+            </div>
+            <div id="filter">
+                <p>Filter</p>
+                <img id="imgOptiune" src="/HackatonNable/front-end/assets/filter.png">
+            </div>
+        </div>
+        <ul class="listaParcuri">
+            <p>Recent reviews</p>
+            <li>
+                <div class="elementLista">
+                    <p id="parkName">Parcul IOR</p>
+                    <img src="/HackatonNable/front-end/assets/star.png" id="imgStar">
+                    <img src="/HackatonNable/front-end/assets/star.png" id="imgStar">
+                    <img src="/HackatonNable/front-end/assets/star.png" id="imgStar">
+                    <img src="/HackatonNable/front-end/assets/star.png" id="imgStar">
+                    <img src="/HackatonNable/front-end/assets/star.png" id="imgStar">
+                    <p>Review:</p>
+                    <p id="review">I quite enjoyed my stay and I am satisfied with the condition of the park currently.</p>
+                </div>
+            </li>
+            <li>
+                <div class="elementLista">
+                    <p id="parkName">Parcul Herastrau</p>
+                    <img src="/HackatonNable/front-end/assets/star.png" id="imgStar">
+                    <img src="/HackatonNable/front-end/assets/star.png" id="imgStar">
+                    <img src="/HackatonNable/front-end/assets/star.png" id="imgStar">
+                    <img src="/HackatonNable/front-end/assets/star.png" id="imgStar">
+                    <p>Review:</p>
+                    <p id="review">I found myself in the lake area near some broken down path which seems to not have been fixed in years.</p>
+                    <p>Recommandations:</p>
+                    <p id="review">I believe that fixing the path may improve pedestrian safety.</p>
+                </div>
+            </li>
+            <li>
+                <div class="elementLista">
+                    <p id="parkName">Parcul Bordei</p>
+                    <img src="/HackatonNable/front-end/assets/star.png" id="imgStar">
+                    <img src="/HackatonNable/front-end/assets/star.png" id="imgStar">
+                    <img src="/HackatonNable/front-end/assets/star.png" id="imgStar">
+                    <p>Review:</p>
+                    <p id="review">I wanted to take a walk around this park and I found myself being taken way by the strong winds on the main path. Also the noisy cars nearby didn't help.</p>
+                    <p>Recommandations:</p>
+                    <p id="review">I think that some additional trees may help alleviate the issues mention in the review.</p>
+                </div>
+            </li>
+        </ul>
+    </div>
 </body>
 </html>
