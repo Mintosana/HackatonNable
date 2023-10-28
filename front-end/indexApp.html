@@ -7,45 +7,59 @@
     <link rel="stylesheet" href="styleApp.css">
 </head>
 <body>
+    <script>
+        function helloThere(){
+            alert("Veti adauga ceva! Pacat ca nu veti gasi nimic aici. Peace and carrots!");
+        }
+    </script>
     <div class="mainBody">
         <div class="MenuBar">
             <div class="logoMenu">
-                <img src="/HackatonNable/front-end/assets/logoPark&You_Rays_NoBG_Dark.png" id="logoImg">
-                <span id="logoTxt">Park&You</span>
+                <a href="" target="_blank" id="homePage">
+                    <img src="/HackatonNable/front-end/assets/logoPark&You_Rays_NoBG_Dark.png" id="logoImg">
+                    <span id="logoTxt">Park&You</span>
+                </a>  
             </div>
             <div class="userMenu">
-                <img src="/HackatonNable/front-end/assets/user.png" id="usrImg">
-                <span id="numeUtilizator">Rece Cristian</span>
+                <button type="button" onclick="helloThere()", id="numeUtilizator"><img src="/HackatonNable/front-end/assets/user.png" id="usrImg">Rece Cristian</button>
             </div>
         </div>
         
         <div class="filterOptionsReviews">
             <div id="sort">
-                <p>Sort</p>
+                <button type="button" onclick="helloThere()">Sort</button>
                 <img id="imgOptiune" src="/HackatonNable/front-end/assets/settings-sliders.png">
             </div>
             <div id="filter">
-                <p>Filter</p>
+                <button type="button" onclick="helloThere()">Filter</button>
                 <img id="imgOptiune" src="/HackatonNable/front-end/assets/filter.png">
             </div>
         </div>
         <ul class="listaParcuri">
             <p>Recent reviews</p>
             <li>
-                <div class="elementLista">
-                    <p id="parkName">Parcul IOR</p>
-                    <img src="/HackatonNable/front-end/assets/star.png" id="imgStar">
-                    <img src="/HackatonNable/front-end/assets/star.png" id="imgStar">
-                    <img src="/HackatonNable/front-end/assets/star.png" id="imgStar">
-                    <img src="/HackatonNable/front-end/assets/star.png" id="imgStar">
-                    <img src="/HackatonNable/front-end/assets/star.png" id="imgStar">
+                <div class="elementLista"> 
+                    <div class="review">
+                        <p id="parkName">Parcul IOR</p>
+                        <button type="button" onclick="helloThere()"><img src="/HackatonNable/front-end/assets/add.png" id="btn"></button>
+                    </div>
+                    <div>
+                        <img src="/HackatonNable/front-end/assets/star.png" id="imgStar">
+                        <img src="/HackatonNable/front-end/assets/star.png" id="imgStar">
+                        <img src="/HackatonNable/front-end/assets/star.png" id="imgStar">
+                        <img src="/HackatonNable/front-end/assets/star.png" id="imgStar">
+                        <img src="/HackatonNable/front-end/assets/star.png" id="imgStar">
+                    </div>
                     <p>Review:</p>
                     <p id="review">I quite enjoyed my stay and I am satisfied with the condition of the park currently.</p>
                 </div>
             </li>
             <li>
                 <div class="elementLista">
-                    <p id="parkName">Parcul Herastrau</p>
+                    <div class="review">
+                        <p id="parkName">Parcul Herastrau</p>
+                        <button type="button" onclick="helloThere()"><img src="/HackatonNable/front-end/assets/add.png" id="btn"></button>
+                    </div>
                     <img src="/HackatonNable/front-end/assets/star.png" id="imgStar">
                     <img src="/HackatonNable/front-end/assets/star.png" id="imgStar">
                     <img src="/HackatonNable/front-end/assets/star.png" id="imgStar">
@@ -58,7 +72,10 @@
             </li>
             <li>
                 <div class="elementLista">
-                    <p id="parkName">Parcul Bordei</p>
+                    <div class="review">
+                        <p id="parkName">Parcul Bordei</p>
+                        <button type="button" onclick="helloThere()"><img src="/HackatonNable/front-end/assets/add.png" id="btn"></button>
+                    </div>
                     <img src="/HackatonNable/front-end/assets/star.png" id="imgStar">
                     <img src="/HackatonNable/front-end/assets/star.png" id="imgStar">
                     <img src="/HackatonNable/front-end/assets/star.png" id="imgStar">

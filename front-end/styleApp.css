@@ -14,6 +14,9 @@ body{
     /* overflow-x: hidden;
     overflow-y: hidden; */
 }
+#homePage{
+    text-decoration: none;
+}
 .MenuBar{
     display:flex;
     flex-direction:row;
@@ -25,7 +28,7 @@ body{
 }
 #logoTxt{
     font-family: "Agbalumo";
-    font-size: 3em;
+    font-size: 4em;
     align-self: center;
 }
 .userMenu{
@@ -42,22 +45,43 @@ body{
     padding-bottom:0%;
 }
 .filterOptionsReviews{
-    font-size:2em;
     display:flex;
     flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
 }
 #sort,#filter{
-    margin: 0% 0% 0% 5%;
     display:flex;
     flex-direction: row;
+    width: 200px;
+    margin-left:10px;
 }
 #imgOptiune{
-    width:10%;
+    width:50px;
+    height:50px;
 }
 .listaParcuri{
     padding:2% 0% 10% 5%;
     list-style-type:none;
     font-size:1em;
+}
+button {
+	background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	cursor: pointer;
+	outline: inherit;
+    font-size:2em;
+    transition: all 0.3s ease-in-out;
+}
+button:hover{
+    font-size:2.1em;
+}
+#btn{
+    width:30px;
+    height:30px;
 }
 .elementLista{
     border-color: #093F51;
@@ -74,5 +98,10 @@ body{
 }
 #review{
     font-size: 0.5em;
+}
+.review{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
 }
 
