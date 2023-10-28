@@ -5,19 +5,12 @@ const port = 3000;
 
 const db = require("./models/Index").db;
 
-
 app.get("/", (req, res) =>
 {
     res.send("Hello there!");
 });
 
 app.use('/api', router);
-
-
-
-
-
-
 
 app.listen(port, () =>
 {
