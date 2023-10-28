@@ -144,9 +144,18 @@ body {
 }
 #SiNoPass {
   color: #093f51;
-  padding-left: 14em;
+  text-align: end;
   margin-bottom: 1.5em;
 }
+
+#SiNoPass {
+  text-decoration: underline;
+}
+
+#SiSubmit {
+  text-decoration: none;
+}
+
 #SiSubmit,
 #RSubmit {
   color: white;
