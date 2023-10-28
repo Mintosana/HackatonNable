@@ -273,10 +273,25 @@ body {
 /* CONTACT */
 
 .contact {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   width: 100%;
   height: 50vh;
-  background-color: yellow;
   color: var(--clr-dark-gray);
+}
+
+.contact .contact-bg {
+  position: absolute;
+  left: -25%;
+  bottom: 0;
+  z-index: -1000;
+  width: 150%;
+  height: 50vh;
+  border-radius: 200% 200% 0 0;
+  background-color: var(--clr-yellow);
 }
 
 .contact .content {
@@ -294,7 +309,7 @@ body {
 }
 
 .contact .right {
-  gap: 2rem;
+  gap: 1.5rem;
 }
 
 .contact .header {
@@ -313,20 +328,33 @@ body {
 
 .contact .socials {
   display: flex;
+  gap: 1rem;
 }
 
 .contact .socials .fb,
 .socials .ig,
 .socials .twitter {
-  width: 50px;
-  height: 50px;
+  width: 30px;
+  height: 30px;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 .socials .fb {
   background-image: url("/front-end/assets/facebook.png");
-  background-color: red;
+}
+
+.socials .ig {
+  background-image: url("/front-end/assets/instagram.png");
+}
+
+.socials .twitter {
+  background-image: url("/front-end/assets/twitter.png");
+}
+@media (max-width: 1024px) {
+  .landing .landing-text p {
+    width: 70%;
+  }
 }
 
 @media (max-width: 1024px) {
