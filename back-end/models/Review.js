@@ -2,17 +2,17 @@ module.exports = (sequelize, DataTypes) => {
   return sequelize.define(
     "reviews",
     {
-      idUser:{
+      userId:{
         type: DataTypes.INTEGER,
         allowNull: false
       },
     
-      idParc:{
+      parkId:{
         type: DataTypes.INTEGER,
         allowNull: false
       },
     
-      descriere:{
+      description:{
         type: DataTypes.STRING,
       },
     

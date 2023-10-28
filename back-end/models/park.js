@@ -8,7 +8,7 @@ module.exports = (sequelize, DataTypes) =>
         allowNull: false
       },
 
-      idOwner: {
+      ownerId: {
         type: DataTypes.INTEGER,
         allowNull: false
       },
