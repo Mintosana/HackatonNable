@@ -1,74 +1,135 @@
-@import url('https://fonts.googleapis.com/css2?family=Agbalumo&family=Poppins:wght@700&display=swap');
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: "Poppins"; 
-    color:#093F51;
+@import url("https://fonts.googleapis.com/css2?family=Agbalumo&family=Poppins:wght@700&display=swap");
+
+:root {
+  --clr-light-green: #88d498;
+  --clr-dark-green: #1a936f;
+  --clr-yellow: #f9f0dd;
+  --clr-dark-gray: #093f51;
 }
-body{
-    width: 100%;
-    height: max-content;
-    background-color: white;
-    display:inline-block;
-    overflow-x: hidden;
-    overflow-y: hidden;
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins";
+  color: #093f51;
 }
-#titluFormular{
-    font-size: 2em;
+body {
+  width: 100%;
+  background-color: white;
 }
-#logo{
-    font-family: "Agbalumo";
-    font-size: 1.2em;
+#titluFormular {
+  font-size: 2em;
 }
-#imgSide{
-    height: 100vh;
-    background-size: cover;
-    background-repeat: no-repeat;
-    overflow:hidden
+#logo {
+  font-family: "Agbalumo";
+  font-size: 1.2em;
 }
-#meniuMax{
-    padding-left:20%;
-    display:inline-block;
+
+.MainDiv {
+  display: flex;
+  height: max-content;
+  justify-content: space-between;
+  width: 100%;
 }
-.meniuMin{
-    padding-top:7.5%;
+
+.bg {
+  position: relative;
+  height: auto;
+  width: 30vw;
+  background-image: url("/front-end/assets/jakob-rubner-tfneUyeXCXw-unsplash.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
-#meniuRegister,#meniuSignIn{
-    margin-bottom:1.2em;
+
+.bg:after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  opacity: 0.3;
+  background: linear-gradient(
+    180deg,
+    rgba(136, 212, 152, 1) 0%,
+    rgba(26, 147, 111, 1) 100%
+  );
 }
-.titluOptiune{
-    font-size:1.2em;
-    margin-bottom:0.2em;
+
+#meniuSignIn,
+#meniuRegister {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
 }
-#SignInSection,#RegisterSection{
-    margin-top:0.5em;
+
+#meniuMax {
+  display: flex;
+  width: 70%;
+  flex-direction: column;
+  align-items: center;
+  gap: 4rem;
 }
-#SiDivEmail,#SiDivPassword,#RDivName,#RDivSurname,#RDivEmail,#RDivPassword,#RRadioGroup{
-    display:flex;
-    flex-direction: column;
+.meniuMin {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
 }
-#SiEmailInput,#SiPasswordInput,#RNameInput,#RSurnameInput,#REmailInput,#RPasswordInput{
-    padding:0.5em;
-    padding-right:5em;
-    border-radius:2em;
-    margin-bottom:1.5em;
+
+.titluOptiune {
+  font-size: 1.2em;
 }
-#SiNoPass{
-    color:#093F51;
-    padding-left:14em;
-    margin-bottom:1.5em;
+#SignInSection,
+#RegisterSection {
+  margin-top: 0.5em;
 }
-#SiSubmit,#RSubmit{
-    color:white;
-    background-color:#1A936F;
-    border-color:#1A936F;
-    padding:0.5em 14em;
-    border-radius:2em;
-    transition: all 0.3s ease-in-out;
+#SiDivEmail,
+#SiDivPassword,
+#RDivName,
+#RDivSurname,
+#RDivEmail,
+#RDivPassword,
+#RRadioGroup {
+  display: flex;
+  flex-direction: column;
 }
-#SiSubmit:hover,#RSubmit:hover{
-    background-color: #F3E9D2;
-    border-color:#F3E9D2;
-    color:#191919;
+#SiEmailInput,
+#SiPasswordInput,
+#RNameInput,
+#RSurnameInput,
+#REmailInput,
+#RPasswordInput {
+  padding: 0.5em;
+  padding-right: 5em;
+  border-radius: 2em;
+  margin-bottom: 1.5em;
+}
+#SiNoPass {
+  color: #093f51;
+  padding-left: 14em;
+  margin-bottom: 1.5em;
+}
+#SiSubmit,
+#RSubmit {
+  color: white;
+  background-color: #1a936f;
+  border-color: #1a936f;
+  padding: 0.5em 14em;
+  border-radius: 2em;
+  transition: all 0.3s ease-in-out;
+}
+#SiSubmit:hover,
+#RSubmit:hover {
+  background-color: #f3e9d2;
+  border-color: #f3e9d2;
+  color: #191919;
+}
+
+input {
+  border: 0;
+  border: 1px solid var(--clr-dark-gray);
 }
