@@ -326,6 +326,7 @@ body {
 
 .socials .fb {
   background-image: url("/front-end/assets/facebook.png");
+  background-color: red;
 }
 
 @media (max-width: 1024px) {
