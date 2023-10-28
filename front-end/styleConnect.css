@@ -147,6 +147,10 @@ body {
   padding-left: 14em;
   margin-bottom: 1.5em;
 }
+
+.ceva {
+  display: none;
+}
 #SiSubmit,
 #RSubmit {
   color: white;
