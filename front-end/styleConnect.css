@@ -144,12 +144,13 @@ body {
 }
 #SiNoPass {
   color: #093f51;
-  text-align: end;
+  text-align: right;
+  text-decoration: underline;
   margin-bottom: 1.5em;
 }
 
-#SiNoPass {
-  text-decoration: underline;
+.ceva {
+  color: none;
 }
 
 #SiSubmit {

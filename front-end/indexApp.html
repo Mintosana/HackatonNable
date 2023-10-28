@@ -1,91 +1,120 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Park&You Control Panel</title>
-    <link rel="stylesheet" href="styleApp.css">
-</head>
-<body>
+    <link rel="stylesheet" href="styleApp.css" />
+  </head>
+  <body>
     <script>
-        function helloThere(){
-            alert("Veti adauga ceva! Pacat ca nu veti gasi nimic aici. Peace and carrots!");
-        }
+      function helloThere() {
+        alert(
+          "Veti adauga ceva! Pacat ca nu veti gasi nimic aici. Peace and carrots!"
+        );
+      }
     </script>
     <div class="mainBody">
-        <div class="MenuBar">
-            <div class="logoMenu">
-                <a href="" target="_blank" id="homePage">
-                    <img src="/HackatonNable/front-end/assets/logoPark&You_Rays_NoBG_Dark.png" id="logoImg">
-                    <span id="logoTxt">Park&You</span>
-                </a>  
-            </div>
-            <div class="userMenu">
-                <button type="button" onclick="helloThere()", id="numeUtilizator"><img src="/HackatonNable/front-end/assets/user.png" id="usrImg">Rece Cristian</button>
-            </div>
+      <div class="MenuBar">
+        <div class="logoMenu">
+          <a href="" target="_blank" id="homePage">
+            <img
+              src="/front-end/assets/logoParkYou_NoRays_NoBG_Dark.png"
+              id="logoImg"
+            />
+            <span id="logoTxt">Park&You</span>
+          </a>
         </div>
-        
-        <div class="filterOptionsReviews">
-            <div id="sort">
-                <button type="button" onclick="helloThere()">Sort</button>
-                <img id="imgOptiune" src="/HackatonNable/front-end/assets/settings-sliders.png">
-            </div>
-            <div id="filter">
-                <button type="button" onclick="helloThere()">Filter</button>
-                <img id="imgOptiune" src="/HackatonNable/front-end/assets/filter.png">
-            </div>
+        <div class="userMenu">
+          <button type="button" onclick="helloThere()" , id="numeUtilizator">
+            <img src="/front-end/assets/user.png" id="usrImg" />Rece Cristian
+          </button>
         </div>
-        <ul class="listaParcuri">
-            <p>Recent reviews</p>
-            <li>
-                <div class="elementLista"> 
-                    <div class="review">
-                        <p id="parkName">Parcul IOR</p>
-                        <button type="button" onclick="helloThere()"><img src="/HackatonNable/front-end/assets/add.png" id="btn"></button>
-                    </div>
-                    <div>
-                        <img src="/HackatonNable/front-end/assets/star.png" id="imgStar">
-                        <img src="/HackatonNable/front-end/assets/star.png" id="imgStar">
-                        <img src="/HackatonNable/front-end/assets/star.png" id="imgStar">
-                        <img src="/HackatonNable/front-end/assets/star.png" id="imgStar">
-                        <img src="/HackatonNable/front-end/assets/star.png" id="imgStar">
-                    </div>
-                    <p>Review:</p>
-                    <p id="review">I quite enjoyed my stay and I am satisfied with the condition of the park currently.</p>
-                </div>
-            </li>
-            <li>
-                <div class="elementLista">
-                    <div class="review">
-                        <p id="parkName">Parcul Herastrau</p>
-                        <button type="button" onclick="helloThere()"><img src="/HackatonNable/front-end/assets/add.png" id="btn"></button>
-                    </div>
-                    <img src="/HackatonNable/front-end/assets/star.png" id="imgStar">
-                    <img src="/HackatonNable/front-end/assets/star.png" id="imgStar">
-                    <img src="/HackatonNable/front-end/assets/star.png" id="imgStar">
-                    <img src="/HackatonNable/front-end/assets/star.png" id="imgStar">
-                    <p>Review:</p>
-                    <p id="review">I found myself in the lake area near some broken down path which seems to not have been fixed in years.</p>
-                    <p>Recommandations:</p>
-                    <p id="review">I believe that fixing the path may improve pedestrian safety.</p>
-                </div>
-            </li>
-            <li>
-                <div class="elementLista">
-                    <div class="review">
-                        <p id="parkName">Parcul Bordei</p>
-                        <button type="button" onclick="helloThere()"><img src="/HackatonNable/front-end/assets/add.png" id="btn"></button>
-                    </div>
-                    <img src="/HackatonNable/front-end/assets/star.png" id="imgStar">
-                    <img src="/HackatonNable/front-end/assets/star.png" id="imgStar">
-                    <img src="/HackatonNable/front-end/assets/star.png" id="imgStar">
-                    <p>Review:</p>
-                    <p id="review">I wanted to take a walk around this park and I found myself being taken way by the strong winds on the main path. Also the noisy cars nearby didn't help.</p>
-                    <p>Recommandations:</p>
-                    <p id="review">I think that some additional trees may help alleviate the issues mention in the review.</p>
-                </div>
-            </li>
-        </ul>
+      </div>
+
+      <div class="filterOptionsReviews">
+        <div id="sort">
+          <button type="button" onclick="helloThere()">Sort</button>
+          <img id="imgOptiune" src="/front-end/assets/settings-sliders.png" />
+        </div>
+        <div id="filter">
+          <button type="button" onclick="helloThere()">Filter</button>
+          <img id="imgOptiune" src="/front-end/assets/filter.png" />
+        </div>
+      </div>
+      <ul class="listaParcuri">
+        <p>Recent reviews</p>
+        <li>
+          <div class="elementLista">
+            <div class="review">
+              <p id="parkName">Parcul IOR</p>
+              <button type="button" onclick="helloThere()">
+                <img src="/front-end/assets/add.png" id="btn" />
+              </button>
+            </div>
+            <div>
+              <img src="/front-end/assets/star.png" id="imgStar" />
+              <img src="/front-end/assets/star.png" id="imgStar" />
+              <img src="/front-end/assets/star.png" id="imgStar" />
+              <img src="/front-end/assets/star.png" id="imgStar" />
+              <img src="/front-end/assets/star.png" id="imgStar" />
+            </div>
+            <p>Review:</p>
+            <p id="review">
+              I quite enjoyed my stay and I am satisfied with the condition of
+              the park currently.
+            </p>
+          </div>
+        </li>
+        <li>
+          <div class="elementLista">
+            <div class="review">
+              <p id="parkName">Parcul Herastrau</p>
+              <button type="button" onclick="helloThere()">
+                <img src="/front-end/assets/add.png" id="btn" />
+              </button>
+            </div>
+            <img src="/front-end/assets/star.png" id="imgStar" />
+            <img src="/front-end/assets/star.png" id="imgStar" />
+            <img src="/front-end/assets/star.png" id="imgStar" />
+            <img src="/front-end/assets/star.png" id="imgStar" />
+
+            <p>Review:</p>
+            <p id="review">
+              I found myself in the lake area near some broken down path which
+              seems to not have been fixed in years.
+            </p>
+            <p>Recommandations:</p>
+            <p id="review">
+              I believe that fixing the path may improve pedestrian safety.
+            </p>
+          </div>
+        </li>
+        <li>
+          <div class="elementLista">
+            <div class="review">
+              <p id="parkName">Parcul Bordei</p>
+              <button type="button" onclick="helloThere()">
+                <img src="/front-end/assets/add.png" id="btn" />
+              </button>
+            </div>
+            <img src="/front-end/assets/star.png" id="imgStar" />
+            <img src="/front-end/assets/star.png" id="imgStar" />
+            <img src="/front-end/assets/star.png" id="imgStar" />
+            <p>Review:</p>
+            <p id="review">
+              I wanted to take a walk around this park and I found myself being
+              taken way by the strong winds on the main path. Also the noisy
+              cars nearby didn't help.
+            </p>
+            <p>Recommandations:</p>
+            <p id="review">
+              I think that some additional trees may help alleviate the issues
+              mention in the review.
+            </p>
+          </div>
+        </li>
+      </ul>
     </div>
-</body>
+  </body>
 </html>
